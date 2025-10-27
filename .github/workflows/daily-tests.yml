@@ -1,17 +1,7 @@
 name: Daily API Tests
 
 on:
-  schedule:
-    # Runs at 11:00 UTC every day (13:00 Kyiv time)
-    - cron: '0 11 * * *'
-
-  push:
-    branches: [ main, master ]
-
-  pull_request:
-    branches: [ main, master ]
-
-  # Allows manual trigger from Actions tab
+  # Allows manual trigger from Actions tab only
   workflow_dispatch:
 
 permissions:
